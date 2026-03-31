@@ -1,0 +1,85 @@
+{
+  "realm" : "Gu-Pang",
+  "users" : [ {
+    "id" : "a7f0395c-6498-4add-a94f-0148e220df6f",
+    "username" : "master",
+    "firstName" : "first",
+    "lastName" : "last",
+    "email" : "master@naver.com",
+    "emailVerified" : true,
+    "attributes" : {
+      "role" : [ "MASTER" ]
+    },
+    "enabled" : true,
+    "createdTimestamp" : 1774879464654,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "a68f8fdf-55f2-4e17-8918-b087b1fefd55",
+      "type" : "password",
+      "createdDate" : 1774879464732,
+      "secretData" : "{\"value\":\"ZUyqJZVhRqPVZkEFJtyTxphESF5u66SFkfTCEBxM3ME=\",\"salt\":\"bM1yjcjq36+nwZKePJ8IzQ==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-gu-pang" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "3d77f042-d855-49af-92f5-3d1259838a53",
+    "username" : "service-account-all-services",
+    "emailVerified" : false,
+    "enabled" : true,
+    "createdTimestamp" : 1774859913868,
+    "totp" : false,
+    "serviceAccountClientId" : "all-services",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-gu-pang" ],
+    "clientRoles" : {
+      "realm-management" : [ "manage-users" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "d1822ab3-8679-4de7-9f9c-57af60348064",
+    "username" : "service-account-api-gateway",
+    "emailVerified" : false,
+    "enabled" : true,
+    "createdTimestamp" : 1774859920850,
+    "totp" : false,
+    "serviceAccountClientId" : "api-gateway",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-gu-pang" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "cd1706ac-7048-4171-ae8a-44d86ecd00c4",
+    "username" : "test1",
+    "firstName" : "first1",
+    "lastName" : "last1",
+    "email" : "test1@naver.com",
+    "emailVerified" : true,
+    "attributes" : {
+      "role" : [ "MASTER" ]
+    },
+    "enabled" : true,
+    "createdTimestamp" : 1774877247370,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "6972d22b-bbf5-42f2-8229-e2d7ebcc645c",
+      "type" : "password",
+      "createdDate" : 1774877247447,
+      "secretData" : "{\"value\":\"rLj6ylC2l/2jChSiz75K6KdRXArMlfsSAkoShtGCqVA=\",\"salt\":\"DiPZewr2ZhtALVZsvuZPhQ==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-gu-pang" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  } ]
+}
