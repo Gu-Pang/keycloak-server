@@ -38,7 +38,9 @@ DO UPDATE SET
     deleted_at = NULL;
 ```
 2. master login해서 accesstoken 복사해두기
+
 post http://localhost:8090/api/v1/auth/login
+
 body에 raw로
 ```
 {
@@ -49,7 +51,9 @@ body에 raw로
 <img width="1090" height="764" alt="image" src="https://github.com/user-attachments/assets/b1cbc707-83b7-4978-9423-2fa1cee71b0c" />
 
 4. 업체 회원 등은 회원가입 api를 통해 회원가입을 우선 진행해야 합니다.
+
 post http://localhost:8090/api/v1/users
+
 body에 raw로 대충 이런 형식으로
 ```
 {
@@ -64,7 +68,9 @@ body에 raw로 대충 이런 형식으로
 <img width="1085" height="670" alt="image" src="https://github.com/user-attachments/assets/20161e59-6025-48a3-8e6e-547612f00587" />
 
 5. 업체 회원 가입 승인
+
 patch http://localhost:8090/api/v1/admin/users/{4번에서 가입한 user의 user_id}
+
 master로 로그인해서 받은 응답의 accesstoken을 헤더에 넣고 X-User-UserId에는 master계정의 user_id값을 넣음
 ```
 key:Authorization,value:Bearer 2번에서복사한토큰값
@@ -79,7 +85,9 @@ body에 raw로
 <img width="1087" height="654" alt="image" src="https://github.com/user-attachments/assets/fc6cdbb3-98b8-4cbd-aee9-4fc812c88db4" />
 
 6. 로그인
+
 post http://localhost:8090/api/v1/auth/login
+
 body에 raw로 아까 4번에서 가입한 아이디와 비번으로
 ```
 {
