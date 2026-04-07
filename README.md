@@ -99,9 +99,13 @@ body에 raw로 아까 4번에서 가입한 아이디와 비번으로
 
 # 각 서버별 security 설정 방법
 게이트웨이에서 전파한 헤더를 어떻게 쓸지는 자유인것 같긴 하지만 user서버는 이렇게 구성하였고 모든 서버 동일하게 해도 무방할 것 같습니다
+
 헤더 값 받는 필터
+
 https://github.com/Gu-Pang/user-server/blob/dev/src/main/java/org/gupang/user/Presentation/Filter/HeaderAuthenticationFilter.java
+
 security config
+
 https://github.com/Gu-Pang/user-server/blob/dev/src/main/java/org/gupang/user/Infrastructure/Config/SecurityConfig.java
 
 ## Keycloak 설정 구조 (2026/03/31 기준)
