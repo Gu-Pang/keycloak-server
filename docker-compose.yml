@@ -20,21 +20,19 @@ services:
     container_name: keycloak
     restart: unless-stopped
     environment:
-      # 개발용 관리자 계정 (dev 모드에서 편리)
-      # KEYCLOAK_ADMIN: ${KEYCLOAK_ADMIN}
-      # KEYCLOAK_ADMIN_PASSWORD: ${KEYCLOAK_ADMIN_PASSWORD}
-      # DB 설정
       KC_DB: postgres
       KC_DB_URL: jdbc:postgresql://postgres-keycloak:5432/${POSTGRES_DB}
       KC_DB_USERNAME: ${POSTGRES_USER}
       KC_DB_PASSWORD: ${POSTGRES_PASSWORD}
-      # Optional: 호스트명/포워딩 설정 (리버스 프록시 뒤에 둘 경우)
+
+      KC_HOSTNAME: localhost
+      KC_HOSTNAME_PORT: 8100
       KC_HOSTNAME_STRICT: "false"
-      # KC_PROXY_HEADERS: xforwarded
-      # KC_PROXY: edge
-      # PROXY_ADDRESS_FORWARDING: "true"
+      KC_HOSTNAME_STRICT_BACKCHANNEL: "false"
+
       KC_HTTP_ENABLED: "true"
       KC_HTTP_PORT: 8100
+
       KC_BOOTSTRAP_ADMIN_USERNAME: ${KEYCLOAK_ADMIN}
       KC_BOOTSTRAP_ADMIN_PASSWORD: ${KEYCLOAK_ADMIN_PASSWORD}
     command:
