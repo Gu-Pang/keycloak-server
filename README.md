@@ -14,7 +14,6 @@ INSERT INTO p_user (
     role, 
     status, 
     slack_id, 
-    keycloak_id, 
     created_at, 
     updated_at, 
     deleted_at
@@ -27,8 +26,7 @@ INSERT INTO p_user (
     'last', 
     'MASTER', 
     'APPROVED', 
-    NULL, 
-    'a7f0395c-6498-4add-a94f-0148e220df6f',
+    'slack', 
     CURRENT_TIMESTAMP, 
     NULL, 
     NULL
